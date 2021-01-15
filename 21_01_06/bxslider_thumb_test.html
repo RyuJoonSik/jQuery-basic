@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+<style>
+	*{margin: 0;padding: 0;}
+	li{list-style: none;}
+	#gallery_wrap{ margin: 0 auto; width: 450px;}
+	#gallery_wrap .bx-wrapper{margin-bottom: 20px;}
+	.slider-pager{text-align: center;}
+	.slider-pager li{display: inline;}
+</style>
+    <script>
+        $(function () {
+            $('.slide_gallery').bxSlider({
+		auto: true,
+		autoControls: false,
+		pagerCustom: '.slider-pager'
+	});
+        });
+    </script>
+</head>
+
+<body>
+    <div id="gallery_wrap">
+        <ul class="slide_gallery">
+            <li><img src="pic_1.jpg" alt="사진1"></li>
+            <li><img src="pic_2.jpg" alt="사진2"></li>
+            <li><img src="pic_3.jpg" alt="사진3"></li>
+            <li><img src="pic_4.jpg" alt="사진4"></li>
+            <li><img src="pic_5.jpg" alt="사진5"></li>
+            <li><img src="pic_6.jpg" alt="사진6"></li>
+            <li><img src="pic_7.jpg" alt="사진7"></li>
+            <li><img src="pic_8.jpg" alt="사진8"></li>
+        </ul>
+        <ul class="slider-pager">
+            <li><a href="#" data-slide-index="0">
+                <img src="pic_t1.jpg" alt="사진1"></a>
+            </li>
+            <li><a href="#" data-slide-index="1">
+                <img src="pic_t2.jpg" alt="사진2"></a>
+            </li>
+            <li><a href="#" data-slide-index="2">
+                <img src="pic_t3.jpg" alt="사진3"></a>
+            </li>
+            <li><a href="#" data-slide-index="3">
+                <img src="pic_t4.jpg" alt="사진4"></a>
+            </li>
+            <li><a href="#" data-slide-index="4">
+                <img src="pic_t5.jpg" alt="사진5"></a>
+                </li>
+            </li>
+            <li><a href="#" data-slide-index="5">
+                <img src="pic_t6.jpg" alt="사진6"></a>
+            </li>
+            <li><a href="#" data-slide-index="6">
+                <img src="pic_t7.jpg" alt="사진7"></a>
+            </li>
+            <li><a href="#" data-slide-index="7">
+                <img src="pic_t8.jpg" alt="사진8"></a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
